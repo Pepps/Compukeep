@@ -1,0 +1,137 @@
+body {
+  font-size: 13px;
+}
+.flat-form {
+  background: rgb(82,136,196);
+  margin: 0px 0px 0px;
+  padding: 0px;
+
+  width: auto;
+  height: auto;
+  position: relative;
+  margin-top: 0px;
+  color: white;
+}
+.tabs {
+  background: rgb(55,72,183);
+  height: 46px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: auto;
+  position: relative;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.tabs li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.tabs a {
+  background: rgb(55,72,183);
+  display: block;
+  float: left;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 22px 12px 22px;
+  /*border-right: 1px solid @tab-border;*/
+
+}
+.tabs a:hover {
+  background: rgb(82,136,196);
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.tabs li:last-child a {
+  border-right: none;
+  color: white;
+  width: auto;
+  text-align: center;
+}
+.tabs a.active {
+  background: rgb(82,136,196);
+  color: white;
+  border-right: none;
+  -webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+.form-action {
+  padding-left: 20px;
+  position: relative;
+}
+
+.form-action p {
+  padding-bottom: 0px;
+  line-height: 0px;
+}
+
+form input[type=text],
+form input[type=password],
+form input[type=submit] {
+}
+
+ form input[type=text],
+ form input[type=password] {
+  width: auto;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  background: #fff;
+  border: none;
+  color: rgb(0,0,0);
+  outline: none;
+}
+
+.show {
+  display: block;
+}
+.hide{
+  display: none;
+}
+
+.button {
+    padding: 10px;
+    text-align: center;
+    font-size: 120%;
+    background-color: #136899;
+    border-radius: 5px;
+}
+
+#closelogin{
+    padding: 10px;
+    text-align: center;
+    font-size: 120%;
+    background-color: #136899;
+    border-radius: 5px;
+}
+
+.button:hover {
+  background: #1e75aa;
+  /*box-shadow: 0 3px 1px #237bb2;*/
+}
+
+.button:active {
+  background: #136899;
+  /*box-shadow: 0 3px 1px #0f608c;*/
+}
+
+::-webkit-input-placeholder {
+  color: rgb(0,0,0);
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgb(0,0,0);
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgb(0,0,0);
+}
+:-ms-input-placeholder {
+  color: rgb(0,0,0);
+}

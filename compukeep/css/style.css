@@ -1,0 +1,337 @@
+<style>
+
+.dropdown:first-child {
+	display:none;
+	color:#fff;
+}
+
+
+/* ************ Author: Alexander Frödeberg ************ */
+body {
+    background-image:url('../assets/background.jpg');
+    
+     /*background: linear-gradient(#898989, #6d6d6d);*/
+   	margin: 0px;
+    color: #000;
+}
+.name {
+/*	border-bottom:1px solid #444444;*/
+	display: block;
+}
+
+.flex {
+	width: 100% !important;
+}
+
+textarea {
+	resize:none;
+}
+
+.button {
+    border: none;
+    display: block;
+    background: #136899;
+    height: 40px;
+    width: 80px;
+    color: white;
+    text-align: center;
+    border-radius: 0px;
+    /*box-shadow: 0px 3px 1px #2075aa;*/
+  	-webkit-transition: all 0.15s linear;
+	  -moz-transition: all 0.15s linear;
+	  transition: all 0.15s linear;
+}
+
+.button:hover {
+  background: #1e75aa;
+  /*box-shadow: 0 3px 1px #237bb2;*/
+}
+
+.button:active {
+  background: #136899;
+  /*box-shadow: 0 3px 1px #0f608c;*/
+}
+
+form {
+  padding-right: 40px !important;
+}
+
+.test {
+	padding:10px;
+}
+
+h4 {
+	color:white;
+}
+
+/*
+form input,
+form input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+	background: #fff;
+	border: none;
+	color: rgb(0,0,0);
+	outline: none;
+}
+*/
+
+.drop { /* Dropdown */ 
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  background: #fff;
+  border: none;
+  color: rgb(0,0,0);
+  outline: none;
+}
+
+
+.flat-form {
+  background: rgb(82,136,196);
+  margin: 25px auto;
+  width: 30%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  margin-top: 8%;
+  /*color: white;*/
+}
+
+#loading {
+	display: none;
+	position: relative;
+	background-image:url('ajax-loader.gif');
+	left: 40%;
+	top: 30%;
+	height: 10%;
+	width: 20%;
+	background-repeat: no-repeat;
+	/*background-color: black;*/
+}
+
+#compYesBox {
+	overflow-y: auto;
+	height: 500px;
+}
+
+.navbar-right {
+	display:none
+;}
+.popupInfo {
+	display: none;
+    background: linear-gradient(to right, #4768C7, #5288C4, #4768C7);
+    padding: 10px;
+	margin: auto;
+	height: 575px;
+}
+
+.pic {
+    width: 75px;
+    height: 75px;
+    background-image: url('computer.jpg');
+}
+
+.list-comp {
+    background-color:#749fcf;
+    height: 45px;
+    float: left;
+    width: 125px;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-bottom:10px;
+    border: 0px;
+
+}
+
+.compBoxWhite {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    color: black;
+}
+.compBoxGray {
+    width: 100%;
+    height: 30px;
+    background-color: #e0e0e0;
+    color: black;
+}
+
+ td {
+    width: 10%;
+} 
+
+h4 {
+	margin:1px;
+}
+
+.active {
+    /*border:1px solid #749fcf;*/
+    box-shadow: 0 0 10px #749fcf; 
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.clicked {
+    background: linear-gradient(#85abd5, #749fcf);
+}
+
+
+
+/*############### JESPERS CSS ############### */
+
+	.menu-comp {
+		padding-left:20px;
+	}	
+
+	#LeftPanel {
+		color:white;	
+		background-color:#3748B7;
+	}
+	.head {
+		margin:0px;
+	}
+
+	.column {
+	  font-family:Verdana, Geneva, sans-serif;
+	  background-color:#fff;
+	}
+
+	.column ul {
+	  margin:0px;
+	  padding:0px;
+	  list-style:none; 
+	}
+	.column li {
+	  text-align:left;
+	  padding:6px;
+	  border-bottom:1px solid #4768C7; 
+	}
+	.column a {
+		text-decoration: none;
+	  	color:white;
+	  	font-size:16px; 
+	}
+	.column a:hover {
+		text-decoration: none;
+	  	color:white;
+	}
+	#pageContainer {
+		width:960px;
+		margin: auto;
+	}
+	.container {
+		background-color: white;
+	}
+
+	.ui-content {
+		padding:0px;
+		margin:0px;
+	}
+	.carousel-control {
+		height:88%;
+	}
+	.carousel-indicators li {
+		background-color: #494949;
+		border: #e9e9e9 solid 1px;
+	}
+	.carousel-indicators .active {
+		background-color: #75a9ba;
+		border: #e9e9e9 solid 1px;
+	}
+ /* ##########SAINNE########## */
+ 	/**/
+ 	.popup-window {
+		border-style:solid;
+		border-width:2px;
+    	height: 50px;
+    	width: 80%;
+    	border-radius: 5px;
+    	background-color: #3748B7;
+    	text-align: center;
+    	color: #FFFFFF;
+    	font-family: Verdana, Arial, Sans-Serif;
+    	opacity: 1;
+   	}
+
+   	/*Just some link decoration*/
+	a:link {text-decoration:none;}    /* unvisited link */
+	a:visited {text-decoration:none;} /* visited link */
+	a:hover {text-decoration:none;}   /* mouse over link */
+	a:active {text-decoration:none;}  /* selected link */
+	a:link {color:white;}      /* unvisited link */
+	a:visited {color:white;}  /* visited link */
+	a:hover {color:white;}  /* mouse over link */
+	a:active {color:white;}  /* selected link */
+
+	/*Style for the place where all the users builds will show up*/
+	#getbuild {
+		text-align: center;
+		position: center;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+
+	/*Style for the header in My builds */
+	.buildheader {
+		color: white;
+		display: block;
+		margin: 0;
+		padding: 0;
+		background: rgb(55,72,183);
+		text-decoration: none;
+		font-size: 16px;
+		padding: 12px 22px 12px 22px;
+		text-align: center;
+	}
+	
+	/*Buildname style*/
+	.buildname {
+		text-align: center;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+
+	/*Component style*/
+	.components {
+		color: white;
+		font-size: 20px;
+	}
+	/*Component info style*/
+	.info {
+		text-align: center;
+		color: black;
+		display: none;
+		font-style:italic;
+		
+	}
+	/*Toggling the info of each component in My builds*/
+	#toggle{
+		padding: 10px;
+		text-align: center;
+		font-size: 120%;
+		background-color: #136899;
+		border-radius: 5px;
+
+	}
+	/*Button to close the "My builds pop-up"*/
+	#closebuilds{
+		padding: 10px;
+		text-align: center;
+		font-size: 120%;
+		background-color: #136899;
+		border-radius: 5px;
+	}
+	#navlogo {
+		padding: -5px;
+	}
+
+	#compukeepinfo {
+		font-size: 17px;
+	}
+</style>
+ /* ##########SAINNE########## */

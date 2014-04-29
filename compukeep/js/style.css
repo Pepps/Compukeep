@@ -1,0 +1,93 @@
+/* ************ Author: Alexander Frödeberg ************ */
+body {
+    background: #e2e2e2;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.popupInfo {
+    padding: 15px;
+    background-color: #5288C4;
+    border: 1px solid #1852fd;
+    font-size: 1.2em;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    margin: -100px 0 0 -100px;
+    z-index: 10;
+    box-shadow: 0px 0px 4px #1852fd;
+    -moz-box-shadow: 0px 0px 4px #1852fd;
+    -webkit-box-shadow: 0px 0px 4px #1852fd;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 87%;
+    width: 80%;
+}
+
+.compYesTable {
+    overflow-y: auto;
+    height: 475px;
+}
+
+#mask {
+    display: none;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.list-comp {
+    background-color:#749fcf;
+    height: 45px;
+    float: left;
+    width: 125px;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-bottom:10px;
+    border: 0px;
+
+}
+
+.compBoxWhite {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    color: black;
+}
+.compBoxGray {
+    width: 100%;
+    height: 30px;
+    background-color: #e0e0e0;
+    color: black;
+}
+
+td {
+    width: 20%;
+}
+
+.active {
+    border:1px solid #749fcf;
+    box-shadow: 0 0 10px #749fcf; 
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.clicked {
+    background: linear-gradient(#1CB739, #1A9739);
+}
+
+.pic {
+    width: 75px;
+    height: 75px;
+    background-image: url('../../CompuKeep/assets/computer.jpg');
+}
+
